@@ -7,10 +7,7 @@
       (with-renderer (renderer win)
 	(set-render-vsync renderer t)
 
-	(let ((texture (sdl3-image:load-texture renderer (asdf:system-relative-pathname 'sdl3-image-examples "examples/lisplogo_fancy_256.png")))
-	      (surface (sdl3-image:load-image (asdf:system-relative-pathname 'sdl3-image-examples "examples/lisplogo_fancy_256.png"))))
-
-	  (format t "Surface format: ~a~%" (surface-format surface))
+	(let ((texture (sdl3-image:load-texture renderer (asdf:system-relative-pathname 'sdl3-image-examples "examples/lisplogo_fancy_256.png"))))
 
           (with-event-loop (:method :poll)
             (:key-up (:scancode scancode)
