@@ -6,4 +6,4 @@
   :pathname "examples"
   :serial t
   :components ((:file "package")
-	       (:file "image-test")))
+               (:file "image-test")))
