@@ -4,9 +4,9 @@
   "Get the version of SDL_image that is linked against your program and return
 the major, minor, and micro version."
   (let* ((version (img-version))
-	 (major (floor (/ version 1000000)))
-	 (minor (floor (mod (/ version 1000) 1000)))
-	 (micro (mod version 1000)))
+         (major (floor (/ version 1000000)))
+         (minor (floor (mod (/ version 1000) 1000)))
+         (micro (mod version 1000)))
     (values major minor micro)))
 
 (defun load-image (filename)

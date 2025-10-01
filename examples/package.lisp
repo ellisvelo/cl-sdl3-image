@@ -2,5 +2,5 @@
   (:use #:cl
         #:alexandria
         #:cffi
-	#:sdl3)
+        #:sdl3)
   (:export #:image-test))
